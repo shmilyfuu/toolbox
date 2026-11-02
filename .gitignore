@@ -34,9 +34,16 @@ tmp/
 *.pem
 *.key
 
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+VoiceWaveASREnv/
+
 # Browser extension packaging
 *.crx
-*.pem
 web-ext-artifacts/
 
 # Userscript temporary exports
