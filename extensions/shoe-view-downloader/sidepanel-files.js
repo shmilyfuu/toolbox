@@ -70,7 +70,7 @@ async function chooseDirectory() {
     const picked = await window.showDirectoryPicker(options);
     directoryHandle = picked;
     await saveDirectoryHandle(picked);
-    await queryDirectoryPermission();
+    directoryPermission = "unknown";
     renderAll();
     showToast(`保存位置已设置为「${picked.name}」。`, "success");
     return true;
