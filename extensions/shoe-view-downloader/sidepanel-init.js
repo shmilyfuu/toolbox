@@ -51,7 +51,7 @@ async function init() {
 
   try {
     directoryHandle = await loadDirectoryHandle();
-    await queryDirectoryPermission();
+    directoryPermission = directoryHandle ? "unknown" : "missing";
   } catch (error) {
     console.warn("Unable to restore download directory", error);
     directoryHandle = null;
